@@ -1,0 +1,26 @@
+{
+   "background": {
+      "scripts": [ "/js/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "/img/icon-48.png",
+      "default_popup": "/html/popup.html"
+   },
+   "content_scripts": [ {
+      "js": [ "/js/inject_skip.js" ],
+      "matches": [ "*://*.adf.ly/*", "*://*.j.gs/*", "*://*.q.gs/*", "*://*.ay.gy/*" ]
+   } ],
+   "description": "Skips AdF.ly links and bypasses the wait!",
+   "icons": {
+      "128": "/img/icon-128.png",
+      "16": "/img/icon-16.png",
+      "48": "/img/icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArbo0D8Agmbsx0FXIylK9LFyhOQdITWl0gEr3ECsmaeYAnpDGJsrxpYocUZYvF60XgvzwtIGH0q78WsLbsebsnE5CJcLX4pI0+LwGu8eWOvgV4CzRIIVZtXH+VbvaDJuZX/VRsX5mC+QbCAIrknOoCv67hNg3ZIkE7MP9vJ3DooGFsK8F7T+YFFZqg0jrbO/C7K2WIdw3dlto9SLmeRPG5ZfJhdc5L0GnL8k07VzZXsQ/YeHZDT73Al8JtP/6Z0vP5ChNAUafaMW6HQBN3BuTAp9Wga8jRN3sBRIQoX+1Np6vzGbsVKW4Hi5JOjyE5d4es70t28CzUBXRqCzCZVgZrQIDAQAB",
+   "manifest_version": 2,
+   "name": "AdF.ly Skipper ★WORKING★",
+   "short_name": "AdF.ly Skipper",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.3",
+   "web_accessible_resources": [ "/js/skip.js", "/img/flattr-badge-large.png", "/img/tears.png" ]
+}

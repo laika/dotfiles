@@ -1,0 +1,69 @@
+" RequMired
+runtime! archlinux.vim
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+execute pathogen#infect()
+
+" Vundle
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'bling/vim-airline'
+Plugin 'rust-lang/rust.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kovetskiy/next-indentation'
+Plugin 'rstacruz/vim-closer'
+Plugin 'ervandew/supertab'
+            
+
+call vundle#end()
+
+" Vim settings
+set number
+syntax on
+filetype plugin indent on
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+
+" Misc
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
+
+" Airline
+let g:airline#extensions#tabline#enabled = 1
+set laststatus=2
+let g:airline_powerline_fonts = 1
+let g:airline_theme='bubblegum'
+
+" Indents
+nnoremap { :IndentationGoUp<CR>
+nnoremap } :IndentationGoDown<CR>
+
+" NERDTree
+map <C-n> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" Buffers
+nnoremap n :bn<CR>
+nnoremap p :bp<CR>
+
+" Autocompletion
+let g:SuperTabDefaultCompletionType="context"
+let OmniCpp_Namespacesearch = 1
+let OmniCpp_GlobalScopeSearch = 1
+let OmniCpp_ShowAccess = 1
+let OmniCpp_ShowPrototypeInAbbr = 1
+let OmniCpp_MayCompleteDot = 1
+let OmniCpp_MayCompleteArrow = 1
+let OmniCpp_MayCompleteScope = 1
+let OmniCpp_DefaultNamespaces = ["std", "_GLIBXX_STD"]

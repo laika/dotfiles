@@ -1,0 +1,1 @@
+/home/alice/.local/share/omf/themes/mtahmed/fish_prompt.fish

@@ -1,0 +1,15 @@
+2015/10/29-15:06:40.484 3320 Reusing MANIFEST /home/alice/.config/chromium/Default/Session Storage/MANIFEST-000001
+2015/10/29-15:06:40.485 3320 Recovering log #19
+2015/10/29-15:06:40.719 3320 Reusing old log /home/alice/.config/chromium/Default/Session Storage/000019.log 
+2015/10/29-17:34:23.675 25084 Level-0 table #24: started
+2015/10/29-17:34:23.933 25084 Level-0 table #24: 1349782 bytes OK
+2015/10/29-17:34:24.130 25084 Delete type=0 #19
+2015/10/29-18:30:10.960 25084 Compacting 1@1 + 1@2 files
+2015/10/29-18:30:12.241 25084 Generated table #25: 580 keys, 785026 bytes
+2015/10/29-18:30:12.241 25084 Compacted 1@1 + 1@2 files => 785026 bytes
+2015/10/29-18:30:12.666 25084 compacted to: files[ 0 0 1 0 0 0 0 ]
+2015/10/29-18:30:12.667 25084 Delete type=2 #21
+2015/10/29-18:30:12.685 25084 Delete type=2 #24
+2015/10/29-18:42:47.817 25084 Level-0 table #27: started
+2015/10/29-18:42:48.240 25084 Level-0 table #27: 1421090 bytes OK
+2015/10/29-18:42:48.485 25084 Delete type=0 #23

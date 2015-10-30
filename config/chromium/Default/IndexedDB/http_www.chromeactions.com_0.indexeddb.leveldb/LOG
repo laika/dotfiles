@@ -1,0 +1,11 @@
+2015/10/28-18:59:23.476 2115 Reusing MANIFEST /home/alice/.config/chromium/Default/IndexedDB/http_www.chromeactions.com_0.indexeddb.leveldb/MANIFEST-000001
+2015/10/28-18:59:23.477 2115 Recovering log #6
+2015/10/28-18:59:23.477 2115 Reusing old log /home/alice/.config/chromium/Default/IndexedDB/http_www.chromeactions.com_0.indexeddb.leveldb/000006.log 
+2015/10/28-18:59:23.938 2115 Current memtable full; waiting...
+2015/10/28-18:59:23.938 6840 Level-0 table #10: started
+2015/10/28-18:59:23.993 6840 Level-0 table #10: 379 bytes OK
+2015/10/28-18:59:24.103 6840 Delete type=0 #6
+2015/10/28-18:59:24.105 6840 Level-0 table #12: started
+2015/10/28-18:59:24.105 6840 Level-0 table #12: 0 bytes OK
+2015/10/28-18:59:24.214 6840 Delete type=0 #9
+2015/10/28-18:59:24.215 6840 Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
