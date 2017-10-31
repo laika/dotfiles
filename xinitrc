@@ -8,6 +8,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 sxhkd -f 100 &
+echo starting compton &
 compton &
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources 
 sh ~/documents/scripts/start.sh &
